@@ -1,0 +1,2 @@
+# StreamGeneraTrig
+Generatore identità goniometriche
