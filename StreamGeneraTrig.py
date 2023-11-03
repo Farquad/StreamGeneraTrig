@@ -6,6 +6,8 @@ import streamlit.components.v1 as components
 
 st.title("Generatore di identità goniometriche")
 
+st.markdown('<p style="font-size: 8px; style="color: grey;">scritto da: marcodisce@gmail.com', unsafe_allow_html=True)
+
 st.markdown("Per generare una serie di esercizi con identità goniometriche da dimostrare seleziona il numero di esercizi e la complessità, poi clicka sul tasto 'genera'. Numeri alti comportano tempi di elaborazione maggiori.")
 
 Livello = st.slider("Quale livello di complessità?",1,10,4)
@@ -16,9 +18,6 @@ Bottone = st.button("Genera")
 Progresso = st.progress(0)
 Progresso.empty()
 
-st.markdown('<a href="mailto:marcodisce@gmail.com">Contatta l\'autore</a>', unsafe_allow_html=True)
-
- 
 
 #---simpy
 
