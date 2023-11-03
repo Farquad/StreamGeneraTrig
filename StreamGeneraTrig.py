@@ -16,7 +16,7 @@ Bottone = st.button("Genera")
 Progresso = st.progress(0)
 Progresso.empty()
 
-st.footer('<a href="mailto:marcodisce@gmail.com">Contatta l\'autore</a>')
+st.footer(scritto da M.D.)
 
  
 
