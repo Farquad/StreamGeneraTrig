@@ -19,7 +19,7 @@ Progresso.empty()
    
 author_name = "Contatta l'autore"
 author_email = "marcodisce@gmail.com"
-st.footer(f'<a href="mailto:{author_email}">Autore: {author_name}</a>', unsafe_allow_html=True)
+st.footer('<a href="mailto:marcodisce@gmail.com">Contatta l'autore</a>')
 
  
 
