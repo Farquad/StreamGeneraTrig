@@ -22,7 +22,7 @@ footer="""<style>
 } 
 </style>
 <div style="position:fixed; bottom:0; width:100%; color: grey; height:3rem;padding:1rem">
-   <p style="text-align:right">© 2022 - marcodisce@gmail.com</p>
+   <p style="text-align:center">© 2022 - marcodisce@gmail.com</p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
