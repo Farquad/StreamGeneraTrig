@@ -21,8 +21,8 @@ footer="""<style>
    padding-bottom:5rem;    
 } 
 </style>
-<div style="position:fixed; bottom:0;width:100%; color: grey; background-color: white; height:3rem;padding:1rem">
-   <p style="text-align:left">© 2022 - marcodisce@gmail.com</p>
+<div style="position:fixed; bottom:0;width:100%; color: grey; background-color: white; height:1rem;padding:1rem">
+   <p style="font-size: 8px;text-align:left">© 2022 - marcodisce@gmail.com</p>
 </div>
 """
 if not Bottone: 
