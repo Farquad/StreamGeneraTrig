@@ -6,7 +6,8 @@ import streamlit.components.v1 as components
 
 st.title("Generatore di identità goniometriche")
 
-st.write('<p style="font-size: 8px; style="color: grey;">scritto da: marcodisce@gmail.com', unsafe_allow_html=True)
+#st.write('<p style="font-size: 8px; style="color: grey;">scritto da: marcodisce@gmail.com', unsafe_allow_html=True)
+st.footer("© 2023 Il Tuo Nome - Contatti: tua@email.com")
 
 st.markdown("Per generare una serie di esercizi con identità goniometriche da dimostrare seleziona il numero di esercizi e la complessità, poi clicka sul tasto 'genera'. Numeri alti comportano tempi di elaborazione maggiori.")
 
