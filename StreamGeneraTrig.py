@@ -25,8 +25,8 @@ footer="""<style>
    padding-bottom:5rem;    
 } 
 </style>
-<div style="position:fixed; bottom:0; width:100%; height:3rem;background-color:#ccc;padding:1rem">
-   <p style="text-align:center">Questo è il mio footer</p>
+<div style="position:fixed; bottom:0; width:100%; height:3rem;padding:1rem">
+   <p style="text-align:left">© 2023 Marco Discendenti - Contatti: marcodisce@gmail.com</p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
