@@ -22,7 +22,7 @@ footer="""<style>
 } 
 </style>
 <div style="position:fixed; bottom:0;width:100%; color: grey; background-color: white; height:1rem;padding:1rem">
-   <p style="font-size: 20px;text-align:left">© 2022 - marcodisce@gmail.com</p>
+   <p style="font-size: 12px;text-align:left">© 2022 - marcodisce@gmail.com</p>
 </div>
 """
 if not Bottone: 
