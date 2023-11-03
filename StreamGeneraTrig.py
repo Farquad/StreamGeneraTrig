@@ -272,7 +272,7 @@ if Bottone:
     st.markdown(soluzione)
 
     
-  st.text("Codice prodotto da Marco Discendenti")
+    st.text("Codice prodotto da Marco Discendenti")
     
     
     
