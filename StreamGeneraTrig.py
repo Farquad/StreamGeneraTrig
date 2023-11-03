@@ -282,8 +282,8 @@ if Bottone:
       else:
         soluzione+="Vedi soluzione precedente\n"
     st.markdown(soluzione)
-   st.markdown('<div style="height: 20px;"></div>', unsafe_allow_html=True)
-   st.markdown('<p style="color: grey;">© 2022 - marcodisce@gmail.com</p>', unsafe_allow_html=True)
+    st.markdown('<div style="height: 20px;"></div>', unsafe_allow_html=True)
+    st.markdown('<p style="color: grey;">© 2022 - marcodisce@gmail.com</p>', unsafe_allow_html=True)
 
   
     
