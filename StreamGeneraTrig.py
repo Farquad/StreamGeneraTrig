@@ -7,7 +7,8 @@ import streamlit.components.v1 as components
 st.title("Generatore di identità goniometriche")
 
 #st.write('<p style="font-size: 8px; style="color: grey;">scritto da: marcodisce@gmail.com', unsafe_allow_html=True)
-st.footer("© 2023 Il Tuo Nome - Contatti: tua@email.com")
+#st.footer("© 2023 Il Tuo Nome - Contatti: tua@email.com")
+
 
 st.markdown("Per generare una serie di esercizi con identità goniometriche da dimostrare seleziona il numero di esercizi e la complessità, poi clicka sul tasto 'genera'. Numeri alti comportano tempi di elaborazione maggiori.")
 
@@ -18,6 +19,17 @@ Bottone = st.button("Genera")
 
 Progresso = st.progress(0)
 Progresso.empty()
+
+footer="""<style>
+.reportview-container .main .block-container{
+   padding-bottom:5rem;    
+} 
+</style>
+<div style="position:fixed; bottom:0; width:100%; height:3rem;background-color:#ccc;padding:1rem">
+   <p style="text-align:center">Questo è il mio footer</p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
 
 
 #---simpy
