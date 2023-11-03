@@ -6,10 +6,6 @@ import streamlit.components.v1 as components
 
 st.title("Generatore di identità goniometriche")
 
-#st.write('<p style="font-size: 8px; style="color: grey;">scritto da: marcodisce@gmail.com', unsafe_allow_html=True)
-#st.footer("© 2023 Il Tuo Nome - Contatti: tua@email.com")
-
-
 st.markdown("Per generare una serie di esercizi con identità goniometriche da dimostrare seleziona il numero di esercizi e la complessità, poi clicka sul tasto 'genera'. Numeri alti comportano tempi di elaborazione maggiori.")
 
 Livello = st.slider("Quale livello di complessità?",1,10,4)
@@ -25,8 +21,8 @@ footer="""<style>
    padding-bottom:5rem;    
 } 
 </style>
-<div style="position:fixed; bottom:0; width:100%; height:3rem;padding:1rem">
-   <p style="text-align:left">© 2023 Marco Discendenti - Contatti: marcodisce@gmail.com</p>
+<div style="position:fixed; bottom:0; width:100%; color: grey; height:3rem;padding:1rem">
+   <p style="text-align:left">© 2022 marcodisce@gmail.com</p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
