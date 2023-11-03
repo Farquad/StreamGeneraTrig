@@ -11,7 +11,7 @@ footer="""<style>
    padding-bottom:5rem;    
 } 
 </style>
-<div style="width:100%; color: grey; height:3rem;padding:1rem">
+<div style="position:fixed; bottom:0;width:100%; color: grey; background-color: white; height:3rem;padding:1rem">
    <p style="text-align:left">© 2022 - marcodisce@gmail.com</p>
 </div>
 """
