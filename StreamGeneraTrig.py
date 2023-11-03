@@ -16,7 +16,7 @@ Bottone = st.button("Genera")
 Progresso = st.progress(0)
 Progresso.empty()
 
-st.footer(scritto da M.D.)
+st.footer("scritto da M.D.")
 
  
 
