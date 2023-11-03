@@ -21,7 +21,7 @@ footer="""<style>
    padding-bottom:5rem;    
 } 
 </style>
-<div style="position:fixed; bottom:0;width:100%; color: lightgray; background-color: white; height:3rem;padding:1rem">
+<div style="position:fixed; bottom:0;width:100%; color: #CCCCCC; background-color: white; height:2rem;padding:0.5rem">
    <p style="text-align:left">© 2022 - marcodisce@gmail.com</p>
 </div>
 """
