@@ -16,6 +16,13 @@ Bottone = st.button("Genera")
 Progresso = st.progress(0)
 Progresso.empty()
 
+   
+author_name = "Contatta l'autore"
+author_email = "marcodisce@gmail.com"
+st.footer(f'<a href="mailto:{author_email}">Autore: {author_name}</a>', unsafe_allow_html=True)
+
+ 
+
 #---simpy
 
 from sympy import *
@@ -271,8 +278,6 @@ if Bottone:
         soluzione+="Vedi soluzione precedente\n"
     st.markdown(soluzione)
 
-    
-    st.text("Codice prodotto da Marco Discendenti")
     
     
     
