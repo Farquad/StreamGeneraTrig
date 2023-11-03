@@ -16,17 +16,6 @@ Bottone = st.button("Genera")
 Progresso = st.progress(0)
 Progresso.empty()
 
-footer="""<style>
-.reportview-container .main .block-container{
-   padding-bottom:5rem;    
-} 
-</style>
-<div style="position:fixed; bottom:0; width:100%; color: grey; height:3rem;padding:1rem">
-   <p style="text-align:center">© 2022 - marcodisce@gmail.com</p>
-</div>
-"""
-st.markdown(footer,unsafe_allow_html=True)
-
 
 #---simpy
 
@@ -283,7 +272,16 @@ if Bottone:
         soluzione+="Vedi soluzione precedente\n"
     st.markdown(soluzione)
 
-    
+footer="""<style>
+.reportview-container .main .block-container{
+   padding-bottom:5rem;    
+} 
+</style>
+<div style="position:fixed; bottom:0; width:100%; color: grey; height:3rem;padding:1rem">
+   <p style="text-align:left">© 2022 - marcodisce@gmail.com</p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)    
     
     
     
