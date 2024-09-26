@@ -256,7 +256,7 @@ def generaListaEsercizi(n,l):
     listaEsercizi=[]
     listaSoluzioni=[]
     while(len(listaEsercizi)<n):
-        a=random.choice("1","sin(x)")
+        a="1"
         soluzione=[a]
         trovato=False
         while trovato==False: #180
