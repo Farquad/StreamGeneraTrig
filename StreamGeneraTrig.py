@@ -128,7 +128,7 @@ def pimeno(stringa):
 
 def pimezzimeno(stringa):
   expr=parse_expr(str(stringa))
-  return(str(pi/2-expr))
+  return(str(1-expr))
 
 def piccolo(stringa):
   flag=False
