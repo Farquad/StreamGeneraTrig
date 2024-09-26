@@ -34,7 +34,7 @@ if not Bottone:
 
 from sympy import *
 from sympy.parsing.sympy_parser import parse_expr
-x, y, z, p = symbols('x y z p')
+x, y, z, p, p2 = symbols('x y z p p2')
 k, m, n = symbols('k m n', integer=True)
 Si, Co, Ta = symbols('Si Co Ta', cls=Function)
 init_printing(use_unicode=True)
@@ -59,6 +59,8 @@ def trig(stringa):
   stringa1=stringa1.replace("Si","sin")
   stringa1=stringa1.replace("Co","cos")
   stringa1=stringa1.replace("Ta","tan")
+  stringa1=stringa1.replace("p","pi")
+  stringa1=stringa1.replace("p2","pi/2")
   return(stringa1)
 
 def indMin(lista):
