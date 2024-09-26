@@ -11,6 +11,7 @@ st.markdown("Per generare una serie di esercizi con identità goniometriche da d
 Livello = st.slider("Quale livello di complessità?",1,10,3)
 Numero = st.slider("Quanti esercizi?",1,50,5)
 FormuleDup = st.checkbox('Richiedono le formule di duplicazione e bisezione', value=True)
+AngoliAss = st.checkbox('Includono angoli associati', value=False)
 
 Bottone = st.button("Genera")
 
@@ -117,6 +118,18 @@ def meta(stringa):
   expr=parse_expr(str(stringa))
   return(str(expr/2))
 
+def meno(stringa):
+  expr=parse_expr(str(stringa))
+  return(str(-expr))
+
+def pimeno(stringa):
+  expr=parse_expr(str(stringa))
+  return(str(pi-expr))
+
+def pimezzimeno(stringa):
+  expr=parse_expr(str(stringa))
+  return(str(pi/2-expr))
+
 def piccolo(stringa):
   flag=False
   if len(stringa)>1:
@@ -147,6 +160,8 @@ def complica(stringa1):
   if (funz(a)=="Si" and fine(a)==")"):
     opzioni=["(Ta("+x0+")*Co("+x0+"))"]
     if not piccolo(x0):
+      if AngoliAss: 
+         opzioni.extend(["(-Si("+meno(x0)+")","(-Si("+pimeno(x0)+")","(Co("+pimezzimeno(x0)+")"])
       if FormuleDup: 
          opzioni.extend(["(2*(Si("+meta(x0)+"))*(Co("+meta(x0)+")))","(2*(Ta("+meta(x0)+"))/(1+Ta("+meta(x0)+")**2))"])
     rimpiazzo=random.choice(opzioni)
