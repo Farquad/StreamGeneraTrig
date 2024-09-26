@@ -285,7 +285,7 @@ if Bottone:
     for i in range(0,Numero):
         es=L[i]
         #radioList.append(st.radio(str(i+1)+". $\\displaystyle "+latex(parse_expr(trig(str(es))))+"=1$\n\n\n"))
-        testo=testo+str(i+1)+". $\\displaystyle "+latex(parse_expr(trig(str(es))))+"=1$\n\n\n"
+        testo=testo+str(i+1)+". $\\displaystyle "+latex(parse_expr(str(es)))+"=1$\n\n\n"
     st.markdown(testo)
     testo="Codice LaTeX:\n\\begin{enumerate}\n"
     for i in range(0,Numero):
