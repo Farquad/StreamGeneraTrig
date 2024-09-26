@@ -213,7 +213,7 @@ def complica(stringa1):
         opzioni.extend(["(Co(2*x)+2*(Si(x)**2))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace("1",rimpiazzo,1)
-  output=str(compact(output))
+  #output=str(compact(output))
   return(output)
 
 def convertiWolf(stringa1):
