@@ -160,7 +160,9 @@ def complica(stringa1):
   if (funz(a)=="Si" and fine(a)==")"):
     opzioni=["(Ta("+x0+")*Co("+x0+"))"]
     if not piccolo(x0):
-      #if AngoliAss:          opzioni.extend(["(Si("+x0+")"])
+      if AngoliAss: 
+         pippo=1
+         #opzioni.extend(["(Si("+x0+")"])
       if FormuleDup: 
          opzioni.extend(["(2*(Si("+meta(x0)+"))*(Co("+meta(x0)+")))","(2*(Ta("+meta(x0)+"))/(1+Ta("+meta(x0)+")**2))"])
     rimpiazzo=random.choice(opzioni)
