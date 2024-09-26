@@ -34,7 +34,7 @@ if not Bottone:
 
 from sympy import *
 from sympy.parsing.sympy_parser import parse_expr
-x, y, z = symbols('x y z')
+x, y, z, p = symbols('x y z p')
 k, m, n = symbols('k m n', integer=True)
 Si, Co, Ta = symbols('Si Co Ta', cls=Function)
 init_printing(use_unicode=True)
