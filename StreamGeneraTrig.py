@@ -308,7 +308,7 @@ if Bottone:
       if Sol1!=["1"]:
         for passaggio in Sol1:
           #print(passaggio)
-          soluzione=soluzione+"$\\displaystyle "+latex(parse_expr(trig(str(passaggio))))+"=1$\n\n\n"
+          soluzione=soluzione+"$\\displaystyle "+latex(parse_expr(str(passaggio)))+"=1$\n\n\n"
       else:
         soluzione+="Vedi soluzione precedente\n"
     st.markdown(soluzione)
