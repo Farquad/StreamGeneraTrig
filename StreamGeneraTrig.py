@@ -208,12 +208,12 @@ def complica(stringa1):
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if a=="1":
-    opzioni=["(Si(x)**2+Co(x)**2)","(Si(x)/Si(x))"]
+    opzioni=["(Si(x)**2+Co(x)**2)"]
     if FormuleDup:
         opzioni.extend(["(Co(2*x)+2*(Si(x)**2))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace("1",rimpiazzo,1)
-  #output=str(compact(output))
+  output=str(compact(output))
   return(output)
 
 def convertiWolf(stringa1):
@@ -256,8 +256,8 @@ def generaListaEsercizi(n,l):
     listaEsercizi=[]
     listaSoluzioni=[]
     while(len(listaEsercizi)<n):
-        a="1"
-        soluzione=["1"]
+        a=random.choice("1","sin(x)")
+        soluzione=[a]
         trovato=False
         while trovato==False: #180
           a=complica(a)
