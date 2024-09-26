@@ -137,6 +137,10 @@ def pimeno(stringa):
   expr=parse_expr(str(stringa))
   return(str(pi-expr))
 
+def pipiu(stringa):
+  expr=parse_expr(str(stringa))
+  return(str(pi+expr))
+   
 def pimezzipiu(stringa):
   expr=parse_expr(str(stringa))
   return(str(p2+expr))
