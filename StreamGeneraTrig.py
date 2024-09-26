@@ -87,12 +87,14 @@ def cercaElemento(stringa,nest):
   elementi=[]
   opzioni=["1"]
   angoli=["x"]
-  opzioni.extend(["Si("+x0+")" for x0 in ["x","2*x","x/2"]])
-  opzioni.extend(["Co("+x0+")" for x0 in ["x","2*x","x/2"]])
-  opzioni.extend(["Co("+x0+")**2" for x0 in ["x","2*x","x/2"]])
-  opzioni.extend(["Si("+x0+")**2" for x0 in ["x","2*x","x/2"]])
-  opzioni.extend(["Ta("+x0+")" for x0 in ["x","2*x","x/2"]])
-  opzioni.extend(["Ta("+x0+")**2" for x0 in ["x","2*x","x/2"]])
+  if FormuleDup:
+     angoli.extend(["2*x","x/2"])
+  opzioni.extend(["Si("+x0+")" for x0 in angoli])
+  opzioni.extend(["Co("+x0+")" for x0 in angoli])
+  opzioni.extend(["Co("+x0+")**2" for x0 in angoli])
+  opzioni.extend(["Si("+x0+")**2" for x0 in angoli])
+  opzioni.extend(["Ta("+x0+")" for x0 in angoli])
+  opzioni.extend(["Ta("+x0+")**2" for x0 in angoli])
   #opzioni=["Si(x)","Co(x)", "Co(x)**2", "Si(x)**2","Ta(x)","Ta(x)**2","1"]
   for i in range(0,9):
     if "1"+str(i) in stringa:
