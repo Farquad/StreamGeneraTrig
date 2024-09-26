@@ -147,13 +147,15 @@ def complica(stringa1):
   if (funz(a)=="Si" and fine(a)==")"):
     opzioni=["(Ta("+x0+")*Co("+x0+"))"]
     if not piccolo(x0):
-      opzioni.extend(["(2*(Si("+meta(x0)+"))*(Co("+meta(x0)+")))","(2*(Ta("+meta(x0)+"))/(1+Ta("+meta(x0)+")**2))"])
+      if FormuleDup: 
+         opzioni.extend(["(2*(Si("+meta(x0)+"))*(Co("+meta(x0)+")))","(2*(Ta("+meta(x0)+"))/(1+Ta("+meta(x0)+")**2))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if (funz(a)=="Co" and fine(a)==")"):
     opzioni=["(Si("+x0+")/Ta("+x0+"))"]
     if not piccolo(x0):
-      extensions=["((Co("+meta(x0)+"))**2-(Si("+meta(x0)+"))**2)","(1-2*(Si("+meta(x0)+"))**2)","(2*(Co("+meta(x0)+"))**2-1)","((1-Ta("+meta(x0)+")**2)/(1+Ta("+meta(x0)+")**2))"]
+      if FormuleDup:
+         extensions=["((Co("+meta(x0)+"))**2-(Si("+meta(x0)+"))**2)","(1-2*(Si("+meta(x0)+"))**2)","(2*(Co("+meta(x0)+"))**2-1)","((1-Ta("+meta(x0)+")**2)/(1+Ta("+meta(x0)+")**2))"]
       opzioni.extend([random.choice(extensions)])
       #opzioni.extend(["(Co("+meta(x0)+")**2-Si("+meta(x0)+")**2)","(1-2*Si("+meta(x0)+")**2)","(2*Co("+meta(x0)+")**2-1)"])
     rimpiazzo=random.choice(opzioni)
@@ -162,27 +164,32 @@ def complica(stringa1):
     opzioni=[random.choice(["(1-Co("+x0+")**2)","((Ta("+x0+")**2)*(Co("+x0+")**2))"])]#,"((Ta("+x0+")**2)/(1+Ta("+x0+")**2))"])]
     #opzioni=[random.choice(["(1-Co("+x0+")**2)","((Ta("+x0+")**2)*(Co("+x0+")**2))","((Ta("+x0+")**2)/(1+Ta("+x0+")**2))"])]
     if not grande(x0):
-      opzioni.extend(["((1-Co("+doppio(x0)+"))*(1/2))"])
+      if FormuleDup:
+         opzioni.extend(["((1-Co("+doppio(x0)+"))*(1/2))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if (funz(a)=="Co" and fine(a)=="2"):
     opzioni=[random.choice(["(1-Si("+x0+")**2)","(1/(1+Ta("+x0+")**2))"])]
     if not grande(x0):
-      opzioni.extend(["((1+Co("+doppio(x0)+"))*(1/2))"])
+      if FormuleDup:
+         opzioni.extend(["((1+Co("+doppio(x0)+"))*(1/2))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if (funz(a)=="Ta" and fine(a)==")"):
     opzioni=["(Si("+x0+")/Co("+x0+"))"]
     if not grande(x0):
-      opzioni.extend(["(Si("+doppio(x0)+")/(Co("+doppio(x0)+")+1))","((1-Co("+doppio(x0)+"))/(Si("+doppio(x0)+")))"])
+      if FormuleDup:
+         opzioni.extend(["(Si("+doppio(x0)+")/(Co("+doppio(x0)+")+1))","((1-Co("+doppio(x0)+"))/(Si("+doppio(x0)+")))"])
     if not piccolo(x0):
-      opzioni.extend(["((2*Ta("+meta(x0)+")/(1-Ta("+meta(x0)+")**2)))"])
+      if FormuleDup:
+         opzioni.extend(["((2*Ta("+meta(x0)+")/(1-Ta("+meta(x0)+")**2)))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if (funz(a)=="Ta" and fine(a)=="2"):
     opzioni=["((Si("+x0+")**2)/(Co("+x0+")**2))"]
     if not grande(x0):
-      opzioni.extend(["((1-Co("+doppio(x0)+"))/(1+Co("+doppio(x0)+")))"])
+      if FormuleDup:
+         opzioni.extend(["((1-Co("+doppio(x0)+"))/(1+Co("+doppio(x0)+")))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if a=="1":
