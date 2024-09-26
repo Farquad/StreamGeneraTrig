@@ -10,6 +10,7 @@ st.markdown("Per generare una serie di esercizi con identità goniometriche da d
 
 Livello = st.slider("Quale livello di complessità?",1,10,4)
 Numero = st.slider("Quanti esercizi?",1,50,5)
+FormuleDup = st.checkbox('Richiedono le formule di duplicazione e bisezione', value=True)
 
 Bottone = st.button("Genera")
 
@@ -85,6 +86,7 @@ def nestedness(e,stringa):
 def cercaElemento(stringa,nest):
   elementi=[]
   opzioni=["1"]
+  angoli=["x"]
   opzioni.extend(["Si("+x0+")" for x0 in ["x","2*x","x/2"]])
   opzioni.extend(["Co("+x0+")" for x0 in ["x","2*x","x/2"]])
   opzioni.extend(["Co("+x0+")**2" for x0 in ["x","2*x","x/2"]])
