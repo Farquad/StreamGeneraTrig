@@ -193,7 +193,9 @@ def complica(stringa1):
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if a=="1":
-    opzioni=["(Co(2*x)+2*(Si(x)**2))","(Si(x)**2+Co(x)**2)"]
+    opzioni=["(Si(x)**2+Co(x)**2)"]
+     if FormuleDup:
+        opzioni.extend(["(Co(2*x)+2*(Si(x)**2))"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace("1",rimpiazzo,1)
   output=str(compact(output))
