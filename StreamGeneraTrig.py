@@ -65,11 +65,11 @@ def trig(stringa):
 
 def trig2(stringa):
   stringa1=stringa
-  stringa1=stringa1.replace("\Operatorname{Si}","\sin")
-  stringa1=stringa1.replace("\Operatorname{Co}","\cos")
-  stringa1=stringa1.replace("\Operatorname{Ta}","\tan")
-  stringa1=stringa1.replace("p1","\pi")
-  stringa1=stringa1.replace("p2","\frac{pi}{2}")
+  stringa1=stringa1.replace("operatorname{Si}","sin")
+  stringa1=stringa1.replace("operatorname{Co}","cos")
+  stringa1=stringa1.replace("operatorname{Ta}","tan")
+  stringa1=stringa1.replace("p_{1}","\\pi")
+  stringa1=stringa1.replace("p_{2}","\\frac{pi}{2}")
   return(stringa1)
 
 def indMin(lista):
