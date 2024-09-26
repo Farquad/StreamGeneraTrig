@@ -120,7 +120,7 @@ def meta(stringa):
 
 def meno(stringa):
   expr=parse_expr(str(stringa))
-  return(str(expr))
+  return(str(-expr))
 
 def pimeno(stringa):
   expr=parse_expr(str(stringa))
@@ -161,7 +161,7 @@ def complica(stringa1):
     opzioni=["(Ta("+x0+")*Co("+x0+"))"]
     if not piccolo(x0):
       if AngoliAss: 
-         opzioni.extend(["(Si("+x0+"))"])
+         opzioni.extend(["(-Si("+meno(x0)+"))"])
       if FormuleDup: 
          opzioni.extend(["(2*(Si("+meta(x0)+"))*(Co("+meta(x0)+")))","(2*(Ta("+meta(x0)+"))/(1+Ta("+meta(x0)+")**2))"])
     rimpiazzo=random.choice(opzioni)
