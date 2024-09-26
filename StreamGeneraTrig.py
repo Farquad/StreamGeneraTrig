@@ -285,12 +285,12 @@ if Bottone:
     for i in range(0,Numero):
         es=L[i]
         #radioList.append(st.radio(str(i+1)+". $\\displaystyle "+latex(parse_expr(trig(str(es))))+"=1$\n\n\n"))
-        testo=testo+str(i+1)+". $\\displaystyle "+latex(parse_expr(str(es)))+"=1$\n\n\n"
+        testo=testo+str(i+1)+". $\\displaystyle "+trig(latex(parse_expr(str(es))))+"=1$\n\n\n"
     st.markdown(testo)
     testo="Codice LaTeX:\n\\begin{enumerate}\n"
     for i in range(0,Numero):
         es=L[i]
-        testo=testo+"\\item $\\displaystyle "+latex(parse_expr(str(es)))+"=1$\n"
+        testo=testo+"\\item $\\displaystyle "+trig(latex(parse_expr(str(es))))+"=1$\n"
     testo=testo+"\\end{enumerate}"    
     st.code(testo)
     testo="Codice Wolfram:\n"
