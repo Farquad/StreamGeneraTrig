@@ -290,7 +290,7 @@ if Bottone:
     testo="Codice LaTeX:\n\\begin{enumerate}\n"
     for i in range(0,Numero):
         es=L[i]
-        testo=testo+"\\item $\\displaystyle "+latex(parse_expr(trig(str(es))))+"=1$\n"
+        testo=testo+"\\item $\\displaystyle "+latex(parse_expr(str(es)))+"=1$\n"
     testo=testo+"\\end{enumerate}"    
     st.code(testo)
     testo="Codice Wolfram:\n"
