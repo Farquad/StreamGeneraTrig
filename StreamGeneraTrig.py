@@ -34,7 +34,7 @@ if not Bottone:
 
 from sympy import *
 from sympy.parsing.sympy_parser import parse_expr
-x, y, z, p, p2 = symbols('x y z p p2')
+x, y, z, p1, p2 = symbols('x y z p1 p2')
 k, m, n = symbols('k m n', integer=True)
 Si, Co, Ta = symbols('Si Co Ta', cls=Function)
 init_printing(use_unicode=True)
@@ -59,7 +59,7 @@ def trig(stringa):
   stringa1=stringa1.replace("Si","sin")
   stringa1=stringa1.replace("Co","cos")
   stringa1=stringa1.replace("Ta","tan")
-  stringa1=stringa1.replace("p","pi")
+  stringa1=stringa1.replace("p1","pi")
   stringa1=stringa1.replace("p2","pi/2")
   return(stringa1)
 
@@ -130,7 +130,7 @@ def pimeno(stringa):
 
 def pimezzimeno(stringa):
   expr=parse_expr(str(stringa))
-  return(str(p-expr))
+  return(str(p2-expr))
 
 def piccolo(stringa):
   flag=False
