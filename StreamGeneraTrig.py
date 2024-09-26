@@ -137,6 +137,10 @@ def pimeno(stringa):
   expr=parse_expr(str(stringa))
   return(str(pi-expr))
 
+def pimezzipiu(stringa):
+  expr=parse_expr(str(stringa))
+  return(str(p2+expr))
+
 def pimezzimeno(stringa):
   expr=parse_expr(str(stringa))
   return(str(p2-expr))
@@ -172,7 +176,7 @@ def complica(stringa1):
     opzioni=["(Ta("+x0+")*Co("+x0+"))"]
     if not piccolo(x0):
       if AngoliAss: 
-         opzioni.extend(["(-Si("+meno(x0)+"))","(Co("+pimezzimeno(x0)+"))"])
+         opzioni.extend(["(-Si("+meno(x0)+"))","(Co("+pimezzimeno(x0)+"))","(-Co("+pimezzipiu(x0)+"))","(Si("+pimeno(x0)+"))","(-Si("+pipiu(x0)+"))"])
       if FormuleDup: 
          opzioni.extend(["(2*(Si("+meta(x0)+"))*(Co("+meta(x0)+")))","(2*(Ta("+meta(x0)+"))/(1+Ta("+meta(x0)+")**2))"])
     rimpiazzo=random.choice(opzioni)
