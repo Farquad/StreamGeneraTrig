@@ -8,7 +8,7 @@ st.title("Generatore di identità goniometriche")
 
 st.markdown("Per generare una serie di esercizi con identità goniometriche da dimostrare seleziona il numero di esercizi e la complessità, poi clicka sul tasto 'genera'. Numeri alti comportano tempi di elaborazione maggiori.")
 
-Livello = st.slider("Quale livello di complessità?",1,10,4)
+Livello = st.slider("Quale livello di complessità?",1,10,3)
 Numero = st.slider("Quanti esercizi?",1,50,5)
 FormuleDup = st.checkbox('Richiedono le formule di duplicazione e bisezione', value=True)
 
