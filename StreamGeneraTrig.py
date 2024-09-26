@@ -256,7 +256,7 @@ def generaListaEsercizi(n,l):
     listaEsercizi=[]
     listaSoluzioni=[]
     while(len(listaEsercizi)<n):
-        a="1"
+        a="Si(x)"
         soluzione=[a]
         trovato=False
         while trovato==False: #180
