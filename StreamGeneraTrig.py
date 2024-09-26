@@ -120,7 +120,7 @@ def meta(stringa):
 
 def meno(stringa):
   expr=parse_expr(str(stringa))
-  return(str(-expr))
+  return(str(expr))
 
 def pimeno(stringa):
   expr=parse_expr(str(stringa))
