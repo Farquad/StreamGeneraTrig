@@ -156,8 +156,8 @@ def complica(stringa1):
     if not piccolo(x0):
       if FormuleDup:
          extensions=["((Co("+meta(x0)+"))**2-(Si("+meta(x0)+"))**2)","(1-2*(Si("+meta(x0)+"))**2)","(2*(Co("+meta(x0)+"))**2-1)","((1-Ta("+meta(x0)+")**2)/(1+Ta("+meta(x0)+")**2))"]
-      opzioni.extend([random.choice(extensions)])
-      #opzioni.extend(["(Co("+meta(x0)+")**2-Si("+meta(x0)+")**2)","(1-2*Si("+meta(x0)+")**2)","(2*Co("+meta(x0)+")**2-1)"])
+         opzioni.extend([random.choice(extensions)])
+         #opzioni.extend(["(Co("+meta(x0)+")**2-Si("+meta(x0)+")**2)","(1-2*Si("+meta(x0)+")**2)","(2*Co("+meta(x0)+")**2-1)"])
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace(a,rimpiazzo,1)
   if (funz(a)=="Si" and fine(a)=="2"):
