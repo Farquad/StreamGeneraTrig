@@ -188,6 +188,8 @@ def complica(stringa1):
   if (funz(a)=="Co" and fine(a)==")"):
     opzioni=["(Si("+x0+")/Ta("+x0+"))"]
     if not piccolo(x0):
+      if AngoliAss:
+         opzioni.extend(["(Co("+meno(x0)+"))","(Si("+pimezzimeno(x0)+"))","(-Si("+pimezzipiu(x0)+"))","(-Co("+pimeno(x0)+"))","(-Co("+pipiu(x0)+"))"])
       if FormuleDup:
          extensions=["((Co("+meta(x0)+"))**2-(Si("+meta(x0)+"))**2)","(1-2*(Si("+meta(x0)+"))**2)","(2*(Co("+meta(x0)+"))**2-1)","((1-Ta("+meta(x0)+")**2)/(1+Ta("+meta(x0)+")**2))"]
          opzioni.extend([random.choice(extensions)])
@@ -204,9 +206,7 @@ def complica(stringa1):
     output=stringa.replace(a,rimpiazzo,1)
   if (funz(a)=="Co" and fine(a)=="2"):
     opzioni=[random.choice(["(1-Si("+x0+")**2)","(1/(1+Ta("+x0+")**2))"])]
-    if not grande(x0):
-      if AngoliAss:
-         opzioni.extend(["(Co("+meno(x0)+"))","(Si("+pimezzimeno(x0)+"))","(-Si("+pimezzipiu(x0)+"))","(-Co("+pimeno(x0)+"))","(-Co("+pipiu(x0)+"))"])
+    if not grande(x0):      
       if FormuleDup:
          opzioni.extend(["((1+Co("+doppio(x0)+"))*(1/2))"])
     rimpiazzo=random.choice(opzioni)
