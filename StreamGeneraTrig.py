@@ -235,6 +235,7 @@ def complica(stringa1):
     rimpiazzo=random.choice(opzioni)
     output=stringa.replace("1",rimpiazzo,1)
   #output=str(compact(output))
+  st.write(output)
   return(output)
 
 def convertiWolf(stringa1):
