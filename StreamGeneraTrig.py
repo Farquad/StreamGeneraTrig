@@ -179,8 +179,8 @@ def complica(stringa1):
   if (funz(a)=="Si" and fine(a)==")"):
     opzioni=["(Ta("+x0+")*Co("+x0+"))"]
     if not piccolo(x0):
-      if AngoliAss: 
-         opzioni.extend(["(-Si("+meno(x0)+"))","(Co("+pimezzimeno(x0)+"))","(-Co("+pimezzipiu(x0)+"))","(Si("+pimeno(x0)+"))","(-Si("+pipiu(x0)+"))"])
+      #if AngoliAss: 
+         #opzioni.extend(["(-Si("+meno(x0)+"))","(Co("+pimezzimeno(x0)+"))","(-Co("+pimezzipiu(x0)+"))","(Si("+pimeno(x0)+"))","(-Si("+pipiu(x0)+"))"])
       if FormuleDup: 
          opzioni.extend(["(2*(Si("+meta(x0)+"))*(Co("+meta(x0)+")))","(2*(Ta("+meta(x0)+"))/(1+Ta("+meta(x0)+")**2))"])
     rimpiazzo=random.choice(opzioni)
@@ -189,7 +189,7 @@ def complica(stringa1):
     opzioni=["(Si("+x0+")/Ta("+x0+"))"]
     if not piccolo(x0):
       if AngoliAss:
-         opzioni.extend(["(Si("+pimezzimeno(x0)+"))","(-Si("+pimezzipiu(x0)+"))","(-Co("+pimeno(x0)+"))","(-Co("+pipiu(x0)+"))"])
+         opzioni.extend(["(Co("+meno(x0)+"))","(Si("+pimezzimeno(x0)+"))","(-Si("+pimezzipiu(x0)+"))","(-Co("+pimeno(x0)+"))","(-Co("+pipiu(x0)+"))"])
       if FormuleDup:
          extensions=["((Co("+meta(x0)+"))**2-(Si("+meta(x0)+"))**2)","(1-2*(Si("+meta(x0)+"))**2)","(2*(Co("+meta(x0)+"))**2-1)","((1-Ta("+meta(x0)+")**2)/(1+Ta("+meta(x0)+")**2))"]
          opzioni.extend([random.choice(extensions)])
