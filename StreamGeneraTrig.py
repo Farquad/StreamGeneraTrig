@@ -189,7 +189,7 @@ def complica(stringa1):
     opzioni=["(Si("+x0+")/Ta("+x0+"))"]
     if not piccolo(x0):
       if AngoliAss:
-         opzioni.extend(["(Co("+meno(x0)+"))"])
+         opzioni.extend(["(Si("+pimezzimeno(x0)+"))","(-Si("+pimezzipiu(x0)+"))","(-Co("+pimeno(x0)+"))","(-Co("+pipiu(x0)+"))"])
       if FormuleDup:
          extensions=["((Co("+meta(x0)+"))**2-(Si("+meta(x0)+"))**2)","(1-2*(Si("+meta(x0)+"))**2)","(2*(Co("+meta(x0)+"))**2-1)","((1-Ta("+meta(x0)+")**2)/(1+Ta("+meta(x0)+")**2))"]
          opzioni.extend([random.choice(extensions)])
