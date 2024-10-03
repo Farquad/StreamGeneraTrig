@@ -169,6 +169,7 @@ def espandi(stringa):
   return(str(expand(expr)))
 
 def complica(stringa1):
+  st.write("sono entrato in complica")
   stringa=espandi(stringa1)
   #stringa=stringa1
   a=cercaElemento(stringa,0)
